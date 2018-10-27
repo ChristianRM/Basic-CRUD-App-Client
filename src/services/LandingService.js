@@ -1,19 +1,16 @@
 import Api from '@/services/Api'
 
 export default {
-  index (search) {
-    return Api().get('person', {params: search})
-  },
-  show (personId) {
-    return Api().get(`person/${personId}`)
+  index () {
+    return Api().get('/')
   },
   post (person) {
-    return Api().post('person', person)
+    return Api().post('/', person)
   },
   put (person) {
-    return Api().put(`person/${person.id}`, person)
+    return Api().put('/', person)
   },
   delete (person) {
-    return Api().delete(`person/${person.id}`, person)
+    return Api().delete('/', {params: person})
   }
 }
