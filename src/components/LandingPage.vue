@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="centered">
   <v-layout row>
     <v-flex xs12 sm6 offset-sm3>
       <v-card>
@@ -179,5 +179,10 @@ li {
 }
 a {
   color: #42b983;
+}
+.centered {
+  margin: auto;
+  padding-left: 30%;
+  width: 100%;
 }
 </style>
